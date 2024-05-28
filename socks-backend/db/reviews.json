@@ -1,0 +1,136 @@
+{
+  "reviews": [
+    {
+      "socksId": 1,
+      "email": "react-lover@gmail.com",
+      "rating": 5,
+      "text": "Best socks I ever owned. Will definitely buy again!"
+    },
+    {
+      "socksId": 2,
+      "email": "javahuts@gmail.com",
+      "rating": 4,
+      "text": "These are soft and love using them!"
+    },
+    {
+      "socksId": 3,
+      "email": "kode4bun@yahoo.com",
+      "rating": 1,
+      "text": "Not a good quality, I will return these"
+    },
+    {
+      "socksId": 4,
+      "email": "mike14@hotmail.com",
+      "rating": 2,
+      "text": "Does not fit well and I need replacement or a refund"
+    },
+    {
+      "socksId": 5,
+      "email": "jacktheman@yandexmail.com",
+      "rating": 5,
+      "text": "1st Perfect pair I ordered online and I will recommend to friends"
+    },
+    {
+      "socksId": 6,
+      "email": "gogetter@hotmail.com",
+      "rating": 3,
+      "text": "Ok but not that great. Little value for money"
+    },
+    {
+      "socksId": 7,
+      "email": "igotnews247@yahoo.com",
+      "rating": 4,
+      "text": "Loved them! Perfect! And even after washing them, they are still great!"
+    },
+    {
+      "socksId": 8,
+      "email": "mellisa1999@outlook.com",
+      "rating": 5,
+      "text": "Great quality. Super comfortable. I have purchased 4 pairs so far. More to come."
+    },
+    {
+      "socksId": 9,
+      "email": "laurathomas@aol.com",
+      "rating": 4,
+      "text": "Perfect pattern to match my outfit!"
+    },
+    {
+      "socksId": 10,
+      "email": "coolcoder@yandexmail.com",
+      "rating": 1,
+      "text": "This looks like a used pair and I want to raise a complaint to your team"
+    },
+    {
+      "socksId": 11,
+      "email": "markz@harvard.com",
+      "rating": 3,
+      "text": "Good quality nice size with definition sock website is real check it out"
+    },
+    {
+      "socksId": 12,
+      "email": "adameve@apple.com",
+      "rating": 5,
+      "text": "Gave as gift he loved them."
+    },
+    {
+      "socksId": 13,
+      "email": "bezosaws@amazon.com",
+      "rating": 5,
+      "text": "I like the logo on this socks and color looks great. Will buy again!"
+    },
+    {
+      "socksId": 14,
+      "email": "rubyandpearl@yahoo.com",
+      "rating": 1,
+      "text": "This is not what I ordered. Please give me refund as quickly as possible"
+    },
+    {
+      "socksId": 15,
+      "email": "Cloudmaker@yandexmail.com",
+      "rating": 4,
+      "text": "I am enjoy the comfort wearing this socks. You"
+    },
+    {
+      "socksId": 16,
+      "email": "javaboys@gmail.com",
+      "rating": 2,
+      "text": "I ordered socks with java design but received this design. I will try them out"
+    },
+    {
+      "socksId": 17,
+      "email": "karenboyd@gmxmail.com",
+      "rating": 5,
+      "text": "I am loving these socks. Color, finish and quality is on mark"
+    },
+    {
+      "socksId": 18,
+      "email": "algates@outlook.com",
+      "rating": 3,
+      "text": "This pair of socks look great and but expensive in this range"
+    },
+    {
+      "socksId": 19,
+      "email": "davinchidesigns@hotmail.com",
+      "rating": 1,
+      "text": "Not a perfect fit for my foot. I can"
+    },
+    {
+      "socksId": 20,
+      "email": "jonyenglish@aol.com",
+      "rating": 4,
+      "text": "Very soft, comfortable, looks just perfect"
+    },
+    {
+      "socksId": 4,
+      "email": "react-lover@gmail.com",
+      "rating": 5,
+      "text": "Best socks I ever owned. Will definitely buy again!"
+    },
+    {
+      "socksId": 4,
+      "email": "that-other-react-lover@gmail.com",
+      "rating": 5,
+      "text": "One word: <b>Awesome</b>"
+    }
+  ]
+}

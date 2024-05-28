@@ -7,3 +7,10 @@ export type Sock = {
   price: number,
   inventory: number
 };
+
+export type Review = {
+  socksId: number,
+  email: string,
+  rating: number,
+  text: string,
+}
