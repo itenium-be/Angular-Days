@@ -1,6 +1,7 @@
 {
   "socks": [
   {
+      "id": 1,
       "name": "Angular Socks",
       "brand": "Angular",
       "variant": "blue",
@@ -9,6 +10,7 @@
       "inventory": 100
     },
     {
+      "id": 2,
       "name": "React Socks",
       "brand": "React",
       "variant": "blue",
@@ -17,6 +19,7 @@
       "inventory": 100
     },
     {
+      "id": 3,
       "name": "Vue Socks",
       "brand": "Vue",
       "variant": "blue",
@@ -25,6 +28,7 @@
       "inventory": 100
     },
     {
+      "id": 4,
       "name": "Vue Socks",
       "brand": "Vue",
       "variant": "green",
@@ -33,6 +37,7 @@
       "inventory": 100
     },
     {
+      "id": 5,
       "name": "Arch Linux Socks",
       "brand": "Arch Linux",
       "variant": "Curious Blue",
@@ -41,6 +46,7 @@
       "inventory": 100
     },
     {
+      "id": 6,
       "name": "AngularJS Socks",
       "brand": "AngularJS",
       "variant": "Black",
@@ -49,6 +55,7 @@
       "inventory": 100
     },
     {
+      "id": 7,
       "name": "HTML5 Socks",
       "brand": "HTML5",
       "variant": "Cod Gray",
@@ -57,6 +64,7 @@
       "inventory": 100
     },
     {
+      "id": 8,
       "name": "REACT Socks",
       "brand": "REACT",
       "variant": "Sky Blue",
@@ -65,6 +73,7 @@
       "inventory": 100
     },
     {
+      "id": 9,
       "name": "Python Socks",
       "brand": "Python",
       "variant": "Saffron",
@@ -73,6 +82,7 @@
       "inventory": 100
     },
     {
+      "id": 10,
       "name": "TensorFlow Socks",
       "brand": "TensorFlow",
       "variant": "Tulip Tree",
@@ -81,6 +91,7 @@
       "inventory": 100
     },
     {
+      "id": 11,
       "name": "Go Socks",
       "brand": "Go",
       "variant": "Cod Gray",
@@ -89,6 +100,7 @@
       "inventory": 100
     },
     {
+      "id": 12,
       "name": "Docker Socks",
       "brand": "Docker",
       "variant": "Bondi Blue",
@@ -97,6 +109,7 @@
       "inventory": 100
     },
     {
+      "id": 13,
       "name": "AWS Socks",
       "brand": "AWS",
       "variant": "Tulip Tree",
@@ -105,6 +118,7 @@
       "inventory": 100
     },
     {
+      "id": 14,
       "name": "Kubernetes Socks",
       "brand": "Kubernetes",
       "variant": "Medium Purple",
@@ -113,6 +127,7 @@
       "inventory": 100
     },
     {
+      "id": 15,
       "name": "AZURE Socks",
       "brand": "AZURE",
       "variant": "Piction Blue",
@@ -121,6 +136,7 @@
       "inventory": 100
     },
     {
+      "id": 16,
       "name": "SQL Socks",
       "brand": "SQL",
       "variant": "Cod Gray",
@@ -129,6 +145,7 @@
       "inventory": 100
     },
     {
+      "id": 17,
       "name": "PostgresSQL Socks",
       "brand": "PostgresSQL",
       "variant": "Mirage",
@@ -137,6 +154,7 @@
       "inventory": 100
     },
     {
+      "id": 18,
       "name": "Typescript Socks",
       "brand": "Typescript",
       "variant": "Denim",
@@ -145,6 +163,7 @@
       "inventory": 100
     },
     {
+      "id": 19,
       "name": "Google Cloud Socks",
       "brand": "Google Cloud",
       "variant": "Key Lime Pie",
@@ -153,6 +172,7 @@
       "inventory": 100
     },
     {
+      "id": 20,
       "name": "UI vs UX Socks",
       "brand": "UI vs UX",
       "variant": "Mahogany",
@@ -161,6 +181,7 @@
       "inventory": 100
     },
     {
+      "id": 21,
       "name": "PHP Socks",
       "brand": "PHP",
       "variant": "Mirage",
@@ -169,6 +190,7 @@
       "inventory": 100
     },
     {
+      "id": 22,
       "name": "R Socks",
       "brand": "R",
       "variant": "Cerulean Blue",
@@ -177,6 +199,7 @@
       "inventory": 100
     },
     {
+      "id": 23,
       "name": "Java Socks",
       "brand": "Java",
       "variant": "Cod Gray",
@@ -185,6 +208,7 @@
       "inventory": 100
     },
     {
+      "id": 24,
       "name": "Docker Socks",
       "brand": "Docker",
       "variant": "Astronaut",
@@ -193,6 +217,7 @@
       "inventory": 100
     },
     {
+      "id": 25,
       "name": "MongoDB Socks",
       "brand": "MongoDB",
       "variant": "Kabul",
@@ -201,6 +226,7 @@
       "inventory": 100
     },
     {
+      "id": 26,
       "name": "TypeScript Socks",
       "brand": "TypeScript",
       "variant": "Lochmara",
@@ -209,6 +235,7 @@
       "inventory": 100
     },
     {
+      "id": 27,
       "name": "Scrum Socks",
       "brand": "Scrum",
       "variant": "Burnt Sienna",
@@ -217,6 +244,7 @@
       "inventory": 100
     },
     {
+      "id": 28,
       "name": "Python Socks",
       "brand": "Python",
       "variant": "Ronchi",
@@ -225,6 +253,7 @@
       "inventory": 100
     },
     {
+      "id": 29,
       "name": "Azure Socks",
       "brand": "Azure",
       "variant": "Cerulean",
@@ -233,6 +262,7 @@
       "inventory": 100
     },
     {
+      "id": 30,
       "name": "Git Socks",
       "brand": "Git",
       "variant": "Cinnabar",
@@ -241,6 +271,7 @@
       "inventory": 100
     },
     {
+      "id": 31,
       "name": "C# Socks",
       "brand": "CSharp",
       "variant": "Persian Indigo",
@@ -249,6 +280,7 @@
       "inventory": 100
     },
     {
+      "id": 32,
       "name": "Visual Studio Socks",
       "brand": "Visual Studio",
       "variant": "Hippie Blue",
@@ -257,6 +289,7 @@
       "inventory": 100
     },
     {
+      "id": 33,
       "name": ".NET Socks",
       "brand": ".NET",
       "variant": "Woodsmoke",
@@ -265,6 +298,7 @@
       "inventory": 100
     },
     {
+      "id": 34,
       "name": "OPEN SOURCE Socks",
       "brand": "OPEN SOURCE",
       "variant": "Golden Grass",
@@ -273,6 +307,7 @@
       "inventory": 100
     },
     {
+      "id": 35,
       "name": "NODE.JS Socks",
       "brand": "NODE.JS",
       "variant": "Mine Shaft",
@@ -281,6 +316,7 @@
       "inventory": 100
     },
     {
+      "id": 36,
       "name": "AWS Socks",
       "brand": "AWS",
       "variant": "Ecstasy",
@@ -289,6 +325,7 @@
       "inventory": 100
     },
     {
+      "id": 37,
       "name": "Flutter Dart Dash Socks",
       "brand": "Flutter Dart Dash",
       "variant": "Picton Blue",
@@ -297,6 +334,7 @@
       "inventory": 100
     },
     {
+      "id": 38,
       "name": "Elastic Search Socks",
       "brand": "Elastic Search",
       "variant": "Ripe Lemon",
