@@ -13,7 +13,7 @@ export const routes: Routes = [
     component: LayoutComponent,
     children: [
       { path: 'why-us', component: WhyUsComponent },
-      { path: 'shop', component: ShopComponent },
+      { path: 'socks', component: ShopComponent },
       { path: 'socks/:id', component: SockComponent },
     ]
   },
