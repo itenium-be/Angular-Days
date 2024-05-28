@@ -1,0 +1,308 @@
+{
+  "socks": [
+  {
+      "name": "Angular Socks",
+      "brand": "Angular",
+      "variant": "blue",
+      "color": "#584FB8",
+      "price": 10.05,
+      "inventory": 100
+    },
+    {
+      "name": "React Socks",
+      "brand": "React",
+      "variant": "blue",
+      "color": "#23A3AC",
+      "price": 20,
+      "inventory": 100
+    },
+    {
+      "name": "Vue Socks",
+      "brand": "Vue",
+      "variant": "blue",
+      "color": "#27384F",
+      "price": 30,
+      "inventory": 100
+    },
+    {
+      "name": "Vue Socks",
+      "brand": "Vue",
+      "variant": "green",
+      "color": "#42AF7C",
+      "price": 9.99,
+      "inventory": 100
+    },
+    {
+      "name": "Arch Linux Socks",
+      "brand": "Arch Linux",
+      "variant": "Curious Blue",
+      "color": "#2395c4",
+      "price": 12,
+      "inventory": 100
+    },
+    {
+      "name": "AngularJS Socks",
+      "brand": "AngularJS",
+      "variant": "Black",
+      "color": "#000000",
+      "price": 15,
+      "inventory": 100
+    },
+    {
+      "name": "HTML5 Socks",
+      "brand": "HTML5",
+      "variant": "Cod Gray",
+      "color": "#0f0f0f",
+      "price": 14.99,
+      "inventory": 100
+    },
+    {
+      "name": "REACT Socks",
+      "brand": "REACT",
+      "variant": "Sky Blue",
+      "color": "#6edceb",
+      "price": 5.99,
+      "inventory": 100
+    },
+    {
+      "name": "Python Socks",
+      "brand": "Python",
+      "variant": "Saffron",
+      "color": "#f6c93a",
+      "price": 12.5,
+      "inventory": 100
+    },
+    {
+      "name": "TensorFlow Socks",
+      "brand": "TensorFlow",
+      "variant": "Tulip Tree",
+      "color": "#ebb946",
+      "price": 10.75,
+      "inventory": 100
+    },
+    {
+      "name": "Go Socks",
+      "brand": "Go",
+      "variant": "Cod Gray",
+      "color": "#0b0b0b",
+      "price": 15,
+      "inventory": 100
+    },
+    {
+      "name": "Docker Socks",
+      "brand": "Docker",
+      "variant": "Bondi Blue",
+      "color": "#058db5",
+      "price": 14,
+      "inventory": 100
+    },
+    {
+      "name": "AWS Socks",
+      "brand": "AWS",
+      "variant": "Tulip Tree",
+      "color": "#e4a637",
+      "price": 13,
+      "inventory": 100
+    },
+    {
+      "name": "Kubernetes Socks",
+      "brand": "Kubernetes",
+      "variant": "Medium Purple",
+      "color": "#925fec",
+      "price": 12.5,
+      "inventory": 100
+    },
+    {
+      "name": "AZURE Socks",
+      "brand": "AZURE",
+      "variant": "Piction Blue",
+      "color": "#3fade2",
+      "price": 11.5,
+      "inventory": 100
+    },
+    {
+      "name": "SQL Socks",
+      "brand": "SQL",
+      "variant": "Cod Gray",
+      "color": "#080808",
+      "price": 10,
+      "inventory": 100
+    },
+    {
+      "name": "PostgresSQL Socks",
+      "brand": "PostgresSQL",
+      "variant": "Mirage",
+      "color": "#111425",
+      "price": 19,
+      "inventory": 100
+    },
+    {
+      "name": "Typescript Socks",
+      "brand": "Typescript",
+      "variant": "Denim",
+      "color": "#0d7bc6",
+      "price": 24.99,
+      "inventory": 100
+    },
+    {
+      "name": "Google Cloud Socks",
+      "brand": "Google Cloud",
+      "variant": "Key Lime Pie",
+      "color": "#cac91f",
+      "price": 9,
+      "inventory": 100
+    },
+    {
+      "name": "UI vs UX Socks",
+      "brand": "UI vs UX",
+      "variant": "Mahogany",
+      "color": "#cd3e42",
+      "price": 6,
+      "inventory": 100
+    },
+    {
+      "name": "PHP Socks",
+      "brand": "PHP",
+      "variant": "Mirage",
+      "color": "#121c26",
+      "price": 5,
+      "inventory": 100
+    },
+    {
+      "name": "R Socks",
+      "brand": "R",
+      "variant": "Cerulean Blue",
+      "color": "#2867b6",
+      "price": 7.99,
+      "inventory": 100
+    },
+    {
+      "name": "Java Socks",
+      "brand": "Java",
+      "variant": "Cod Gray",
+      "color": "#131313",
+      "price": 6.66,
+      "inventory": 100
+    },
+    {
+      "name": "Docker Socks",
+      "brand": "Docker",
+      "variant": "Astronaut",
+      "color": "#254b70",
+      "price": 5.5,
+      "inventory": 100
+    },
+    {
+      "name": "MongoDB Socks",
+      "brand": "MongoDB",
+      "variant": "Kabul",
+      "color": "#60453e",
+      "price": 6.78,
+      "inventory": 100
+    },
+    {
+      "name": "TypeScript Socks",
+      "brand": "TypeScript",
+      "variant": "Lochmara",
+      "color": "#0b7ccc",
+      "price": 9,
+      "inventory": 100
+    },
+    {
+      "name": "Scrum Socks",
+      "brand": "Scrum",
+      "variant": "Burnt Sienna",
+      "color": "#ed675e",
+      "price": 10,
+      "inventory": 100
+    },
+    {
+      "name": "Python Socks",
+      "brand": "Python",
+      "variant": "Ronchi",
+      "color": "#edcb46",
+      "price": 15.99,
+      "inventory": 100
+    },
+    {
+      "name": "Azure Socks",
+      "brand": "Azure",
+      "variant": "Cerulean",
+      "color": "#098cd0",
+      "price": 9.99,
+      "inventory": 100
+    },
+    {
+      "name": "Git Socks",
+      "brand": "Git",
+      "variant": "Cinnabar",
+      "color": "#e04438",
+      "price": 65,
+      "inventory": 100
+    },
+    {
+      "name": "C# Socks",
+      "brand": "CSharp",
+      "variant": "Persian Indigo",
+      "color": "#3d1182",
+      "price": 10.01,
+      "inventory": 100
+    },
+    {
+      "name": "Visual Studio Socks",
+      "brand": "Visual Studio",
+      "variant": "Hippie Blue",
+      "color": "#55a2b2",
+      "price": 20,
+      "inventory": 100
+    },
+    {
+      "name": ".NET Socks",
+      "brand": ".NET",
+      "variant": "Woodsmoke",
+      "color": "#131419",
+      "price": 10,
+      "inventory": 100
+    },
+    {
+      "name": "OPEN SOURCE Socks",
+      "brand": "OPEN SOURCE",
+      "variant": "Golden Grass",
+      "color": "#dab528",
+      "price": 13,
+      "inventory": 100
+    },
+    {
+      "name": "NODE.JS Socks",
+      "brand": "NODE.JS",
+      "variant": "Mine Shaft",
+      "color": "#292929",
+      "price": 9.99,
+      "inventory": 100
+    },
+    {
+      "name": "AWS Socks",
+      "brand": "AWS",
+      "variant": "Ecstasy",
+      "color": "#f86110",
+      "price": 10,
+      "inventory": 100
+    },
+    {
+      "name": "Flutter Dart Dash Socks",
+      "brand": "Flutter Dart Dash",
+      "variant": "Picton Blue",
+      "color": "#4fc0ec",
+      "price": 15,
+      "inventory": 100
+    },
+    {
+      "name": "Elastic Search Socks",
+      "brand": "Elastic Search",
+      "variant": "Ripe Lemon",
+      "color": "#f1ca15",
+      "price": 10,
+      "inventory": 100
+    }
+  ]
+}

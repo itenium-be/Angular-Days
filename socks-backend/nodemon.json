@@ -3,8 +3,7 @@
     "./src",
     "./.env",
     "./package.json",
-    "./tsconfig.json",
-    "./jest.config.ts"
+    "./tsconfig.json"
   ],
   "ext": "*",
   "exec": "dotenv -e .env ts-node ./src/index.ts"

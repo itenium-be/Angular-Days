@@ -7,7 +7,9 @@ import morgan from 'morgan';
 import config from './config';
 import errorHandler from './middleware/errorHandler';
 import fourOhFour from './middleware/fourOhFour';
-import root from './routes/root';
+import hello from './routes/hello';
+import users from './routes/users';
+import socks from './routes/socks';
 
 const app = express()
 
@@ -25,7 +27,9 @@ app.use(helmet())
 app.use(morgan('tiny'))
 
 // Apply routes before error handling
-app.use('/', root)
+app.use('/', hello)
+app.use('/users', users)
+app.use('/socks', socks)
 
 // Apply error handling last
 app.use(fourOhFour)
