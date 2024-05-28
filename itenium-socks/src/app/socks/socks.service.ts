@@ -12,4 +12,8 @@ export class SocksService {
   get(): Observable<Sock[]> {
     return this.http.get<Sock[]>('http://localhost:3000/socks')
   }
+
+  getLatest(): Observable<Sock[]> {
+    return this.http.get<Sock[]>('http://localhost:3000/socks/latest')
+  }
 }

@@ -16,6 +16,6 @@ export class LatestSocksComponent implements OnInit {
   constructor(private socksService: SocksService) {}
 
   ngOnInit(): void {
-    this.socks$ = this.socksService.get();
+    this.socks$ = this.socksService.getLatest();
   }
 }
