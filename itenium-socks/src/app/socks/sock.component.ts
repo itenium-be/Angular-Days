@@ -24,4 +24,9 @@ export class SockComponent {
     const sockId = +window.location.pathname.split('/')[2];
     this.socksService.buySocks(sockId).subscribe();
   }
+
+  addReview(): void {
+    const sockId = +window.location.pathname.split('/')[2];
+    this.socksService.addReview(sockId, 'my review', 5).subscribe();
+  }
 }
