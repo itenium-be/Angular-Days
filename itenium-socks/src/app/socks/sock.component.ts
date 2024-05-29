@@ -16,6 +16,7 @@ export class SockComponent {
   constructor(private socksService: SocksService) {}
 
   ngOnInit(): void {
+    // HACK: This is not the way to get the sockId!!
     const sockId = +window.location.pathname.split('/')[2];
     this.sock$ = this.socksService.getById(sockId);
   }
@@ -26,6 +27,7 @@ export class SockComponent {
   }
 
   addReview(): void {
+    // TODO: Bind the form!
     const sockId = +window.location.pathname.split('/')[2];
     this.socksService.addReview(sockId, 'my review', 5).subscribe();
   }
