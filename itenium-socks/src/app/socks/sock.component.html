@@ -1,1 +1,48 @@
-SOCK DETAILS
+<div class="alert alert-success container" role="alert" style="display: none">
+  Thank you for your review! Be sure to shop with us again soon!
+</div>
+
+<div class="alert alert-danger container" role="alert" style="display: none">
+  Failed to post the review: <span></span>
+</div>
+
+<div class="alert alert-success container" role="alert" style="display: none">
+  Thank you once again for being a part of the Toe-Tally Amazing family. Happy socking!
+</div>
+
+<div class="alert alert-danger container" role="alert" style="display: none"></div>
+
+
+<section class="shop_section layout_padding" style="padding-top: 14px" *ngIf="sock$ | async as sock">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-6">
+        <div class="box">
+          <div class="img-box">
+            <img src="/sock-images/Socks-{{ sock.brand }}-{{ sock.variant }}.png" />
+          </div>
+          <div class="detail-box">
+            <h6 id="socksName">{{ sock.name }}</h6>
+            <h6><span>€</span><span id="socksPrice">{{ sock.price }}</span></h6>
+          </div>
+          <div class="new">
+            <span class="favourite" [style.color]="sock.color"><i class="fa fa-star"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6">
+        <h1 style="margin-top: 25px;">{{ sock.name }}</h1>
+        {{ sock.inventory }} in stock. FREE Shipping!
+        <br>
+        Color: {{ sock.variant | titlecase }}
+
+        <br>
+        <br>
+
+        <button type="button" class="buy-socks" (click)="buy()">
+          BUY NOW
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

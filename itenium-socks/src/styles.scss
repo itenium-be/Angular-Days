@@ -408,7 +408,7 @@ a:focus {
 
 
 
-#buy-socks {
+.buy-socks {
   display: inline-block;
   padding: 10px 40px;
   background-color: #db4566;
@@ -421,7 +421,7 @@ a:focus {
   text-transform: uppercase;
 }
 
-#buy-socks:hover {
+.buy-socks:hover {
   background-color: transparent;
   color: #db4566;
 }

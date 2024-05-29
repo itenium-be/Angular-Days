@@ -8,6 +8,21 @@ export const postSocks: RequestHandler = async (req, res) => {
 }
 
 
+export const buySocks: RequestHandler = async (req, res) => {
+  const toBuyId = +req.body.id
+  const socks = await socksDb.getObject<any[]>('/socks')
+  const toBuy = socks.find(sock => sock.id === toBuyId)
+  if (!toBuy?.inventory) {
+    res.status(500).json({msg: 'No longer available!'});
+    return
+  }
+
+  toBuy.inventory--;
+  await socksDb.push('/socks', socks, true)
+  res.status(200).json({msg: 'Socks bought!'});
+}
+
+
 export const putSocks: RequestHandler = async (req, res) => {
   const toUpdate = req.body
   const socks = await socksDb.getObject<any[]>('/socks')

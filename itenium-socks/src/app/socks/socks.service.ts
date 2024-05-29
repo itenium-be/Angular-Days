@@ -21,7 +21,15 @@ export class SocksService {
     return this.http.get<Sock[]>('http://localhost:3000/socks/latest')
   }
 
+  buySocks(id: number): Observable<{msg: string}> {
+    return this.http.post<{msg: string}>('http://localhost:3000/socks/buy', {id})
+  }
+
   getLatestReviews(): Observable<Review[]> {
     return this.http.get<Review[]>('http://localhost:3000/socks/reviews/latest')
+  }
+
+  getSockReviews(sockId: number): Observable<Review[]> {
+    return this.http.get<Review[]>(`http://localhost:3000/socks/reviews/${sockId}`)
   }
 }
