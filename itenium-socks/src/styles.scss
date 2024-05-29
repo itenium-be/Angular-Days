@@ -390,6 +390,8 @@ a:focus {
   border-radius: 5px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .shop_section .btn-box a:hover {

@@ -13,6 +13,10 @@ export class SocksService {
     return this.http.get<Sock[]>('http://localhost:3000/socks')
   }
 
+  getById(id: number): Observable<Sock> {
+    return this.http.get<Sock>(`http://localhost:3000/socks/${id}`)
+  }
+
   getLatest(): Observable<Sock[]> {
     return this.http.get<Sock[]>('http://localhost:3000/socks/latest')
   }
