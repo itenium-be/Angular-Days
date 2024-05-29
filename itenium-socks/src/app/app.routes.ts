@@ -17,4 +17,9 @@ export const routes: Routes = [
       { path: 'socks/:id', component: SockComponent },
     ]
   },
+  {
+    path: 'admin',
+    // ATTN: it's also possible to load the routes directly instead!
+    loadChildren: () => import('./admin/admin.module').then(x => x.AdminModule)
+  },
 ];

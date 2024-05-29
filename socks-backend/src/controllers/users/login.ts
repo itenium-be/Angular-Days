@@ -15,7 +15,7 @@ const postLogin : RequestHandler = (req, res) => {
     return
   }
 
-  res.json({token: ''})
+  res.json({token: 'LE TOKEN'})
 }
 
 export default postLogin
