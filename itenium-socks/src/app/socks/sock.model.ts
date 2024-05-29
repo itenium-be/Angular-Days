@@ -13,4 +13,5 @@ export type Review = {
   email: string,
   rating: number,
   text: string,
+  added: Date,
 }
