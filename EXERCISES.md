@@ -148,6 +148,11 @@ Bind the form to what is being sent to the backend!
 Display the success/failure alert after a review has
 been submitted.
 
+For newly added reviews, the email is not set!
+Using `<ng-container>` (or `@if`!), make sure there is no
+empty "By " text displayed.
+
+
 Bonus:  
 Show these messages in a Toastr instead!
 
