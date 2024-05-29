@@ -152,6 +152,8 @@ For newly added reviews, the email is not set!
 Using `<ng-container>` (or `@if`!), make sure there is no
 empty "By " text displayed.
 
+Make the review text mandatory. Stop a form submit
+and display an error message when there is no text.
 
 Bonus:  
 Show these messages in a Toastr instead!
