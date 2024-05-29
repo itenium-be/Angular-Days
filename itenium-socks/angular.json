@@ -13,10 +13,20 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "nl": {
+            "translation": "src/locale/messages.nl.json"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": true,
+            "i18nMissingTranslation": "warning",
             "outputPath": "dist/itenium-socks",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -58,6 +68,12 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "en-US": {
+              "localize": ["en-US"]
+            },
+            "nl": {
+              "localize": ["nl"]
             }
           },
           "defaultConfiguration": "production"
@@ -70,6 +86,12 @@
             },
             "development": {
               "buildTarget": "itenium-socks:build:development"
+            },
+            "en-US": {
+              "buildTarget": "itenium-socks:build:development,en-US"
+            },
+            "nl": {
+              "buildTarget": "itenium-socks:build:development,nl"
             }
           },
           "defaultConfiguration": "development"

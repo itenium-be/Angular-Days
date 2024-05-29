@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3">
-          <h6>
+          <h6 i18n>
             ABOUT US
           </h6>
-          <p>
+          <p i18n>
             We're more than just a sock store - we're a celebration of your love for programming and technology.
             Founded by tech enthusiasts, our store is dedicated to bringing you a unique collection of socks that allow you to
             express your passion for coding and all things IT.
@@ -14,19 +14,19 @@
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="info_form">
-            <h5>
+            <h5 i18n>
               Newsletter
             </h5>
             <form action="#">
-              <input type="email" placeholder="Enter your email">
-              <button>
+              <input type="email" placeholder="Enter your email" i18n-placeholder>
+              <button i18n>
                 Subscribe
               </button>
             </form>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
-          <h6>
+          <h6 i18n="Footer_NeedHelpTitle|Need help with our store title">
             NEED HELP
           </h6>
           <p>
@@ -36,7 +36,7 @@
           </p>
         </div>
         <div class="col-md-6 col-lg-3">
-          <h6>
+          <h6 i18n="@@ContactUsFooterTitle">
             CONTACT US
           </h6>
           <div class="info_link-box">
@@ -60,7 +60,7 @@
   <footer class="footer_section">
     <div class="container">
       <p>
-        &copy; {{ currentYear }} All Rights Reserved
+        &copy; {{ toTranslate }}
       </p>
     </div>
   </footer>

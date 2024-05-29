@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   currentYear = new Date().getFullYear();
+  toTranslate = $localize`${this.currentYear} All Rights Reserved.`;
+  withId = $localize`:@@translation-id:default translation`;
 }

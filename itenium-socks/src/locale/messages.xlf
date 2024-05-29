@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1051982183061013709" datatype="html">
+        <source> ABOUT US </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3854816460126731084" datatype="html">
+        <source> We&apos;re more than just a sock store - we&apos;re a celebration of your love for programming and technology. Founded by tech enthusiasts, our store is dedicated to bringing you a unique collection of socks that allow you to express your passion for coding and all things IT. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="89765874059345001" datatype="html">
+        <source> Newsletter </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="203827529942340818" datatype="html">
+        <source>Enter your email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7410598877106672517" datatype="html">
+        <source> Subscribe </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1830307962616883457" datatype="html">
+        <source> NEED HELP </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer.component.html</context>
+          <context context-type="linenumber">30,33</context>
+        </context-group>
+        <note priority="1" from="description">Need help with our store title</note>
+        <note priority="1" from="meaning">Footer_NeedHelpTitle</note>
+      </trans-unit>
+      <trans-unit id="8339829974805586705" datatype="html">
+        <source>Localized string!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
