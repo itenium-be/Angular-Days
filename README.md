@@ -57,6 +57,39 @@ ng test
 - [Official docs](https://angular.dev/guide/signals)
 - [Star Wars Vehicles](https://github.com/DeborahK/Angular-Signals)
 
+### Example
+
+```ts
+import { signal, computed } from "@angular/core";
+
+const counter = signal(0);
+console.log(counter());
+counter.set(1);
+counter.update(curValue => curValue + 1);
+
+const derivedCounter = computed(() => {
+  return counter() * 10;
+})
+```
+
+### With Effect
+
+```ts
+@Component({})
+export class CounterComponent {
+  count = signal(0);
+
+  constructor() {
+    effect(onCleanup => {
+      console.log(`current value: ${this.count()}`);
+      onCleanup(() => {
+        console.log("Perform cleanup action here");
+      });
+    });
+  }
+}
+```
+
 
 ## Existing itenium sessions
 
