@@ -1,8 +1,8 @@
 Admin Exercises
 ===============
 
-Routing -- Login
-----------------
+Routing -- Login Guard
+----------------------
 
 If no token has been set in the `AuthService`, automatically
 reroute the user to the login page.
