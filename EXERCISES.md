@@ -184,18 +184,8 @@ add the `active` class to indicate where
 the user currently is.
 
 
-
-RXJS -- Review SocksId
-----------------------
-
-The reviews on the main page display the `socksId`.
-It's probably better to display the sock name there
-instead!
-
-
-
 Internationalization
---------------------
+====================
 
 We've already configured our application for `nl-BE`.
 Now we want to offer our magnificent socks store in
@@ -244,3 +234,18 @@ translated!
 3rd Party Tooling:  
 - [martinroob/ngx-i18nsupport](https://github.com/martinroob/ngx-i18nsupport)
 - [i18next](https://github.com/i18next/i18next)
+
+
+Reactive Extensions JS
+======================
+
+See `/RXJS/README.md` for pure RXJS exercises
+and/or Angular RXJS exercises.
+
+
+RXJS -- Review SocksId
+----------------------
+
+The reviews on the main page display the `socksId`.
+It's probably better to display the sock name there
+instead!

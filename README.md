@@ -11,7 +11,11 @@ Culliganlaan 4b, 1831 Diegem
 Node: 22.1.0
 
 ```sh
+git clone --recurse-submodules https://github.com/itenium-be/Angular-Days
+cd Angular-Days
+
 npm install -g @angular/cli
+
 cd itenium-socks
 npm install
 ng serve --open
@@ -46,6 +50,9 @@ ng test
 ## More Challenges!?
 
 - [tomalaforge/angular-challenges](https://github.com/tomalaforge/angular-challenges)
+- [AngularWave/rxjs-challenge](https://github.com/AngularWave/rxjs-challenge)
+
+
 
 #### Existing itenium sessions
 
