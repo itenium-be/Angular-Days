@@ -1,3 +1,6 @@
 [submodule "reactive-forms"]
 	path = reactive-forms
 	url = https://github.com/itenium-be/angular-reactive-forms
+[submodule "RXJS"]
+	path = RXJS
+	url = https://github.com/itenium-be/RXJS
