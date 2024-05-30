@@ -52,9 +52,13 @@ ng test
 - [tomalaforge/angular-challenges](https://github.com/tomalaforge/angular-challenges)
 - [AngularWave/rxjs-challenge](https://github.com/AngularWave/rxjs-challenge)
 
+## Signals
+
+- [Official docs](https://angular.dev/guide/signals)
+- [Star Wars Vehicles](https://github.com/DeborahK/Angular-Signals)
 
 
-#### Existing itenium sessions
+## Existing itenium sessions
 
 - [ReactiveForms](https://github.com/itenium-be/angular-reactive-forms)
 - [RXJS](https://github.com/itenium-be/RXJS)
