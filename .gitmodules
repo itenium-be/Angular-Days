@@ -4,3 +4,6 @@
 [submodule "RXJS"]
 	path = RXJS
 	url = https://github.com/itenium-be/RXJS
+[submodule "Redux"]
+	path = Redux
+	url = https://github.com/itenium-be/Redux
