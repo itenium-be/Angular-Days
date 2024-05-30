@@ -16,27 +16,17 @@ type TokenResult = {
   providedIn: 'root'
 })
 export class AuthService {
-  token$ = new BehaviorSubject('');
-  loggedIn$ = this.token$.pipe(map(token => !!token));
-
   constructor(private http: HttpClient, private router: Router) {}
 
   checkLogin(): Observable<boolean> {
-    return this.loggedIn$;
+    return of(true);
   }
 
   login(creds: Login): void {
-    this.http.post<TokenResult>('http://localhost:3000/users', creds)
-      .pipe(
-        map(result => {
-          if (result.token) {
-            this.token$.next(result.token);
-            this.router.navigateByUrl('/admin');
-          } else {
-            this.token$.next('');
-          }
-        })
-      )
-      .subscribe();
+    // TODO: login user
+  }
+
+  getToken(): string {
+    return '';
   }
 }

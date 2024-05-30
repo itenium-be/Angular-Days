@@ -10,7 +10,6 @@ export const routes: Routes = [
   {
     path: '',
     component: AdminComponent,
-    canActivateChild: [canActivate],
     children: [
       { path: '', component: SocksAdminComponent },
       { path: 'socks/new', component: SockEditComponent },

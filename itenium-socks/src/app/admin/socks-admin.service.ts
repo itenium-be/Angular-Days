@@ -14,7 +14,7 @@ export class SocksAdminService {
   ) { }
 
   deleteSock(sockId: number): Observable<boolean> {
-    const headers = new HttpHeaders().set('Authorization', 'Bearer ' + this.authService.token$.getValue())
+    const headers = new HttpHeaders().set('Authorization', 'Bearer ' + this.authService.getToken())
     return this.http.delete<boolean>(`http://localhost:3000/socks/${sockId}`, { headers })
   }
 }
