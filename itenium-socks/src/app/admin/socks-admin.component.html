@@ -1,1 +1,36 @@
-SOCKS ADMIN
+<h2>
+  SOCKS ADMIN
+  <a class="add-sock" routerLink="/admin/socks/new">
+    Add Sock
+  </a>
+</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Variant</th>
+      <th scope="col">Color</th>
+      <th scope="col">Price</th>
+      <th scope="col">Inventory</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (sock of socks$ | async; track sock.id) {
+      <tr>
+        <th scope="row">{{ sock.name }}</th>
+        <td>{{ sock.variant | titlecase }}</td>
+        <td [style.color]="sock.color">{{ sock.color }}</td>
+        <td style="text-align: right;">{{ sock.price | currency }}</td>
+        <td>{{ sock.inventory }}</td>
+        <td>
+          <i class="fa fa-trash" (click)="deleteSock(sock.id)"></i>
+          <a [routerLink]="['/admin/socks/', sock.id]">
+            <i class="fa fa-edit"></i>
+          </a>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

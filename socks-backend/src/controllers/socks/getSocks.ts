@@ -1,7 +1,12 @@
 import { RequestHandler } from 'express'
 import { socksDb } from '../../db/db'
 
+function sleep(ms: number) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
 const getSocks: RequestHandler = async (_req, res) => {
+  // await sleep(300)
   const socks = await socksDb.getData('/socks')
   res.status(200).json(socks);
 }
