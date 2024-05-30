@@ -159,6 +159,15 @@ Bonus:
 Show these messages in a Toastr instead!
 
 
+Templates -- Document Title
+---------------------------
+
+On the "Why Us" page, change the document.title
+to `Why Us | Toe-tally Amazing`.
+
+Don't use `document.title` 😉
+
+
 Routing -- SockId
 -----------------
 
