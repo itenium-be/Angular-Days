@@ -47,21 +47,8 @@ ng test
 
 - [tomalaforge/angular-challenges](https://github.com/tomalaforge/angular-challenges)
 
+#### Existing itenium sessions
 
-Incorporate existing sessions  
 - [ReactiveForms](https://github.com/itenium-be/angular-reactive-forms)
 - [RXJS](https://github.com/itenium-be/RXJS)
 - [Redux](https://github.com/itenium-be/Redux)
-
-
-Main vs Side pptx  
-- [New Angular Features](https://itenium.be/blog/javascript/angular17/)
-- Frontend setup on Windows (git, Docker, nvm, VSCode, ...)
-- Basic Angular
-- Specific Angular pptx?
-    - Security?
-    - Components?
-    - Routing?
-    - Modules?
-    - HttpClient?
-    - ... ?
