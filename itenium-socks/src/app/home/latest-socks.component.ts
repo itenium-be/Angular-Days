@@ -9,7 +9,7 @@ import { PricePipe } from '../price.pipe';
 @Component({
   selector: 'app-latest-socks',
   standalone: true,
-  imports: [NgFor, AsyncPipe, RouterLink, PricePipe],
+  imports: [AsyncPipe, RouterLink, PricePipe],
   templateUrl: './latest-socks.component.html'
 })
 export class LatestSocksComponent implements OnInit {
