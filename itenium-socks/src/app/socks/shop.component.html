@@ -5,8 +5,25 @@
         Our Socks
       </h2>
     </div>
+    <div>
+      <label>
+        Filter by Name:
+        <input type="text" (input)="onFilterName($event)">
+      </label>
+      <label>
+        Filter by Color:
+        <input type="text" (input)="onFilterColor($event)">
+      </label>
+      <label>
+        Sort by:
+        <select (change)="onSortBy($event)">
+          <option value="name">Name</option>
+          <option value="price">Price</option>
+        </select>
+      </label>
+    </div>
     <div class="row">
-      <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let sock of socks$ | async">
+      <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let sock of filteredSocks$ | async">
         <div class="box">
           <a href="/socks/{{ sock.id }}">
             <div class="img-box">
@@ -14,7 +31,7 @@
             </div>
             <div class="detail-box">
               <h6>{{ sock.name }}</h6>
-              <h6><span>{{ sock.price }}</span></h6>
+              <h6><span>{{ sock.price | price }}</span></h6>
             </div>
             <div class="new">
               <span class="favourite" [style.color]="sock.color"><i class="fa fa-star"></i></span>
@@ -23,5 +40,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div>
+    <button (click)="onPageChange(currentPageSubject.value - 1)" [disabled]="currentPageSubject.value === 1">Previous</button>
+    <button (click)="onPageChange(currentPageSubject.value + 1)">Next</button>
   </div>
 </section>
