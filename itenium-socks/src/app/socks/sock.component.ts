@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { Sock } from './sock.model';
 import { SocksService } from './socks.service';
 import { AsyncPipe, NgIf, TitleCasePipe } from '@angular/common';
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-sock',
@@ -11,24 +12,24 @@ import { AsyncPipe, NgIf, TitleCasePipe } from '@angular/common';
   templateUrl: './sock.component.html'
 })
 export class SockComponent {
+  sockId: number = -1;
   sock$!: Observable<Sock>;
 
-  constructor(private socksService: SocksService) {}
+  constructor(private socksService: SocksService,
+              private route: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
-    // HACK: This is not the way to get the sockId!!
-    const sockId = +window.location.pathname.split('/')[2];
-    this.sock$ = this.socksService.getById(sockId);
+    this.sockId = this.route.snapshot.params['id'];
+    this.sock$ = this.socksService.getById(this.sockId);
   }
 
   buy(): void {
-    const sockId = +window.location.pathname.split('/')[2];
-    this.socksService.buySocks(sockId).subscribe();
+    this.socksService.buySocks(this.sockId).subscribe();
   }
 
   addReview(): void {
     // TODO: Bind the form!
-    const sockId = +window.location.pathname.split('/')[2];
-    this.socksService.addReview(sockId, 'my review', 5).subscribe();
+    this.socksService.addReview(this.sockId, 'my review', 5).subscribe();
   }
 }
