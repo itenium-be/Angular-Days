@@ -3,12 +3,11 @@ import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SocksService } from './socks.service';
 import { Review } from './sock.model';
-import { TimeAgoPipe } from '../time-ago.pipe';
 
 @Component({
   selector: 'app-sock-reviews',
   standalone: true,
-  imports: [NgFor, AsyncPipe, TimeAgoPipe],
+  imports: [NgFor, AsyncPipe],
   templateUrl: './sock-reviews.component.html'
 })
 export class SockReviewsComponent {

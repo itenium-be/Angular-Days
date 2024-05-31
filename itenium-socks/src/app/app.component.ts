@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +9,4 @@ import { environment } from '../environments/environment';
   ],
   templateUrl: './app.component.html',
 })
-export class AppComponent{
-  isProduction = environment.production;
-}
+export class AppComponent {}
