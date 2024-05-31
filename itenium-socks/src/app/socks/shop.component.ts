@@ -6,15 +6,15 @@ import { AsyncPipe, NgFor } from '@angular/common';
 import { PricePipe } from "../pipes/price.pipe";
 
 @Component({
-    selector: 'app-shop',
-    standalone: true,
-    templateUrl: './shop.component.html',
-    imports: [NgFor, AsyncPipe, PricePipe]
+  selector: 'app-shop',
+  standalone: true,
+  templateUrl: './shop.component.html',
+  imports: [NgFor, AsyncPipe, PricePipe]
 })
 export class ShopComponent {
   socks$!: Observable<Sock[]>;
 
-  constructor(private socksService: SocksService) {}
+  constructor(private socksService: SocksService) { }
 
   ngOnInit(): void {
     this.socks$ = this.socksService.get();

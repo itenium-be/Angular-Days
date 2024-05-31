@@ -6,15 +6,15 @@ import { AsyncPipe, NgIf, TitleCasePipe } from '@angular/common';
 import { PricePipe } from "../pipes/price.pipe";
 
 @Component({
-    selector: 'app-sock',
-    standalone: true,
-    templateUrl: './sock.component.html',
-    imports: [NgIf, AsyncPipe, TitleCasePipe, PricePipe]
+  selector: 'app-sock',
+  standalone: true,
+  templateUrl: './sock.component.html',
+  imports: [NgIf, AsyncPipe, TitleCasePipe, PricePipe]
 })
 export class SockComponent {
   sock$!: Observable<Sock>;
 
-  constructor(private socksService: SocksService) {}
+  constructor(private socksService: SocksService) { }
 
   ngOnInit(): void {
     // HACK: This is not the way to get the sockId!!
