@@ -1,0 +1,15 @@
+{
+  "locale": "nl",
+  "translations": {
+    "footerAboutUsHeader": " Over Ons ",
+    "footerAboutUsText": " We zijn meer dan alleen een sokkenwinkel: we vieren jouw liefde voor programmeren en technologie. Onze winkel is opgericht door tech-enthousiastelingen en is erop gericht u een unieke collectie sokken te bieden waarmee u uw passie voor coderen en alles wat met IT te maken heeft, kunt uiten. ",
+    "footerNewsletterHeader": " Nieuwsbrief ",
+    "emailAdressPlaceholder": " Voer uw e-mailadres in ",
+    "footerNewsletterSubscribeButton": " Abonneer ",
+    "footerAdminModuleLink": " Admin Module ",
+    "footerNeedHelpHeader": " HULP NODIG ",
+    "footerNeedHelpText": " Ons klantenserviceteam is bereikbaar via telefoon of e-mail. Aarzel niet om contact op te nemen wanneer u hulp nodig heeft. Wij doen er alles aan om u de best mogelijke sokkenwinkelervaring te bieden. ",
+    "footerContactUsHeader": " CONTACTEER ONS ",
+    "footerCopyright": " © {$INTERPOLATION} Alle rechten voorbehouden "
+  }
+}

@@ -13,6 +13,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "nl": "src/locale/messages.nl.json"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -23,6 +29,7 @@
             "polyfills": [
               "zone.js"
             ],
+            "localize":true,
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -58,6 +65,9 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "nl": {
+              "localize": ["nl"]
             }
           },
           "defaultConfiguration": "production"
@@ -70,6 +80,9 @@
             },
             "development": {
               "buildTarget": "itenium-socks:build:development"
+            },
+            "nl": {
+              "buildTarget": "itenium-socks:build:nl"
             }
           },
           "defaultConfiguration": "development"
