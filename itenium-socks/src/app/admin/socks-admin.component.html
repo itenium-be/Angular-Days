@@ -22,7 +22,7 @@
         <th scope="row">{{ sock.name }}</th>
         <td>{{ sock.variant | titlecase }}</td>
         <td [style.color]="sock.color">{{ sock.color }}</td>
-        <td style="text-align: right;">{{ sock.price | currency }}</td>
+        <td style="text-align: right;">{{ sock.price | currency:'EUR':'symbol':'.2':'nl-BE' }}</td>
         <td>{{ sock.inventory }}</td>
         <td>
           <i class="fa fa-trash" (click)="deleteSock(sock.id)"></i>
