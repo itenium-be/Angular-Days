@@ -10,10 +10,6 @@ import { environment } from '../environments/environment';
   ],
   templateUrl: './app.component.html',
 })
-export class AppComponent implements OnInit {
-  isProduction!: boolean;
-
-  ngOnInit() {
-    this.isProduction = environment.production;
-  }
+export class AppComponent{
+  isProduction = environment.production;
 }
