@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-latest-socks',
   standalone: true,
-  imports: [NgFor, AsyncPipe, RouterLink],
+  imports: [AsyncPipe, RouterLink],
   templateUrl: './latest-socks.component.html'
 })
 export class LatestSocksComponent implements OnInit {
