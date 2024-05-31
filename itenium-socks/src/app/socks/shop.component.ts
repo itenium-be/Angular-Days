@@ -18,4 +18,8 @@ export class ShopComponent {
   ngOnInit(): void {
     this.socks$ = this.socksService.get();
   }
+
+  handleImageError(event: any, placeholder: string) {
+    event.target.src = placeholder;
+  }
 }
