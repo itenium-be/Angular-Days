@@ -7,7 +7,7 @@
     </div>
     <div class="row">
       <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let sock of socks$ | async">
-        <app-sock-layout [sockModel]="sock"></app-sock-layout>
+        <app-sock-layout [sock]="sock"></app-sock-layout>
       </div>
     </div>
   </div>
