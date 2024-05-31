@@ -18,4 +18,8 @@ export class ShopComponent {
   ngOnInit(): void {
     this.socks$ = this.socksService.get();
   }
+
+  errImage(e: any): void {
+    e.target.src = "sock-images/Socks-404.png";
+  }
 }
