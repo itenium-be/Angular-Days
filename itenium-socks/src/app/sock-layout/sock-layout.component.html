@@ -1,0 +1,14 @@
+<div class="box">
+    <a href="/socks/{{ sockModel.id }}">
+      <div class="img-box">
+        <img src="sock-images/Socks-{{ sockModel.brand }}-{{ sockModel.variant }}.png" />
+      </div>
+      <div class="detail-box">
+        <h6>{{ sockModel.name }}</h6>
+        <h6><span>€</span><span>{{ sockModel.price }}</span></h6>
+      </div>
+      <div class="new">
+        <span class="favourite" [style.color]="sockModel.color"><i class="fa fa-star"></i></span>
+      </div>
+    </a>
+  </div>
