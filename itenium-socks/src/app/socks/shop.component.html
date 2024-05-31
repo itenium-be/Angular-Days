@@ -10,7 +10,8 @@
         <div class="box">
           <a href="/socks/{{ sock.id }}">
             <div class="img-box">
-              <img src="sock-images/Socks-{{ sock.brand }}-{{ sock.variant }}.png" />
+              <img src="sock-images/Socks-{{ sock.brand }}-{{ sock.variant }}.png"
+                   (error)="handleImageError($event, 'sock-images/Socks-placeholder.png')"/>
             </div>
             <div class="detail-box">
               <h6>{{ sock.name }}</h6>
