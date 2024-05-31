@@ -1,5 +1,5 @@
 import { AsyncPipe, NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import { Observable } from 'rxjs';
 import { SocksService } from './socks.service';
 import { Review } from './sock.model';
@@ -11,11 +11,16 @@ import { Review } from './sock.model';
   templateUrl: './sock-reviews.component.html'
 })
 export class SockReviewsComponent {
+  @Input() sockId!: number | undefined;
   reviews$!: Observable<Review[]>;
 
   constructor(private socksService: SocksService) {}
 
   ngOnInit(): void {
-    this.reviews$ = this.socksService.getLatestReviews();
+    if(this.sockId){
+      this.reviews$ = this.socksService.getSockReviews(this.sockId);
+    } else {
+      this.reviews$ = this.socksService.getLatestReviews();
+    }
   }
 }
