@@ -17,18 +17,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-md-6 col-lg-6">
-        <div class="box">
-          <div class="img-box">
-            <img src="/sock-images/Socks-{{ sock.brand }}-{{ sock.variant }}.png" />
-          </div>
-          <div class="detail-box">
-            <h6>{{ sock.name }}</h6>
-            <h6><span>€</span><span>{{ sock.price }}</span></h6>
-          </div>
-          <div class="new">
-            <span class="favourite" [style.color]="sock.color"><i class="fa fa-star"></i></span>
-          </div>
-        </div>
+        <app-sock-layout [sock]="sock"></app-sock-layout>
       </div>
       <div class="col-sm-6 col-md-6 col-lg-6">
         <h1 style="margin-top: 25px;">{{ sock.name }}</h1>
