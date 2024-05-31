@@ -2,14 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { SocksService } from '../socks/socks.service';
 import { Observable } from 'rxjs';
 import { Sock } from '../socks/sock.model';
-import { AsyncPipe, NgFor } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { SockCardComponent } from "../socks/sock-card/sock-card.component";
 
 @Component({
-  selector: 'app-latest-socks',
-  standalone: true,
-  imports: [NgFor, AsyncPipe, RouterLink],
-  templateUrl: './latest-socks.component.html'
+    selector: 'app-latest-socks',
+    standalone: true,
+    imports: [AsyncPipe, RouterLink, SockCardComponent],
+    templateUrl: './latest-socks.component.html'
 })
 export class LatestSocksComponent implements OnInit {
   socks$!: Observable<Sock[]>;
