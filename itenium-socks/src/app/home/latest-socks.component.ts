@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SocksService } from '../socks/socks.service';
 import { Observable } from 'rxjs';
 import { Sock } from '../socks/sock.model';
-import { AsyncPipe, NgFor } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { PricePipe } from '../price.pipe';
 
