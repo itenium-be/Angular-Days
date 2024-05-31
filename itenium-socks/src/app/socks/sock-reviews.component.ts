@@ -1,4 +1,4 @@
-import { AsyncPipe, NgFor } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SocksService } from './socks.service';
@@ -8,7 +8,7 @@ import { TimeagoModule } from 'ngx-timeago';
 @Component({
   selector: 'app-sock-reviews',
   standalone: true,
-  imports: [NgFor, AsyncPipe, TimeagoModule ],
+  imports: [AsyncPipe, TimeagoModule ],
   templateUrl: './sock-reviews.component.html'
 })
 export class SockReviewsComponent {

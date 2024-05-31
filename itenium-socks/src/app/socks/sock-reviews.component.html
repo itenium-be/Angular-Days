@@ -9,13 +9,16 @@
   <div class="container px-0">
     <div id="customCarousel2" class="carousel carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
-        <div *ngFor="let review of reviews$ | async; index as i" class="carousel-item {{ i == 0 ? 'active' : '' }}">
+        @for (review of reviews$ | async ; track review) {
+        <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
           <div class="box">
             <div class="client_info">
               <div class="client_name">
                 <h5>
                   {{ review.socksId }}
-                  <i *ngFor="let _ of [].constructor(review.rating)" class="fa fa-star" style="color: gold"></i>
+                  @for (rating of [].constructor(review.rating) ; track rating) {
+                    <i class="fa fa-star" style="color: gold"></i>
+                  }
                 </h5>
                 <h6>On {{ review.added | timeago }} by {{ review.email }}</h6>
               </div>
@@ -26,6 +29,7 @@
             </p>
           </div>
         </div>
+      }
       </div>
       <div class="carousel_btn-box">
         <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
