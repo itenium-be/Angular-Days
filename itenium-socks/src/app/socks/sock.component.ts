@@ -3,12 +3,14 @@ import { Observable } from 'rxjs';
 import { Sock } from './sock.model';
 import { SocksService } from './socks.service';
 import { AsyncPipe, NgIf, TitleCasePipe } from '@angular/common';
+import { EuroFormatPipe } from '../euro-format.pipe'; // adjust the path as needed
 
 @Component({
   selector: 'app-sock',
   standalone: true,
-  imports: [NgIf, AsyncPipe, TitleCasePipe],
-  templateUrl: './sock.component.html'
+  imports: [NgIf, AsyncPipe, TitleCasePipe, EuroFormatPipe],
+  templateUrl: './sock.component.html',
+  providers: [EuroFormatPipe] // add EuroFormatPipe to providers
 })
 export class SockComponent {
   sock$!: Observable<Sock>;
