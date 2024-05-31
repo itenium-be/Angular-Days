@@ -4,9 +4,6 @@
   "newProjectRoot": "projects",
   "projects": {
     "itenium-socks": {
-      "i18n": {
-        "sourceLocale": "nl-BE"
-      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
