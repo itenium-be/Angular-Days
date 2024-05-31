@@ -1,8 +1,8 @@
-<div class="alert alert-success container" role="alert" style="display: none">
+<div *ngIf="this.apiSuccess" class="alert alert-success container" role="alert">
   Thank you for your review! Be sure to shop with us again soon!
 </div>
 
-<div class="alert alert-danger container" role="alert" style="display: none">
+<div *ngIf="this.apiError" class="alert alert-danger container" role="alert">
   Failed to post the review: <span></span>
 </div>
 
@@ -68,18 +68,12 @@
       </div>
       <div class="col-md-6 col-lg-5 px-0">
         <div class="review-form" style="padding-bottom: 0;">
-          @if (this.apiError){
-            <p style="color:red">Error adding review. Please try again later.</p>
-          }
-          @if (this.apiSuccess){
-            <p style="color:green">Review succesfully added</p>
-          }
           <form [formGroup]="reviewForm" (ngSubmit)="addReview()">
             <div>
               @if (this.formError){
                 <p style="color:red">Please enter a review.</p>
               }
-              <input type="text" [style]="this.formError ? 'color':'red'" class="message-box" placeholder="Your review..." formControlName="review" />
+              <input type="text" class="message-box" placeholder="Your review..." formControlName="review" />
             </div>
             <div>
               <label>Your rating:</label>
