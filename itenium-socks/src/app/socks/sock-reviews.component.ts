@@ -1,4 +1,4 @@
-import { AsyncPipe, NgFor } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SocksService } from '@services/socks.service';
@@ -7,7 +7,7 @@ import { Review } from '@models/sock.model';
 @Component({
   selector: 'app-sock-reviews',
   standalone: true,
-  imports: [NgFor, AsyncPipe],
+  imports: [AsyncPipe],
   templateUrl: './sock-reviews.component.html'
 })
 export class SockReviewsComponent {

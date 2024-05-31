@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Sock } from '@models/sock.model';
 import { SocksService } from '@services/socks.service';
-import { AsyncPipe, NgIf, TitleCasePipe } from '@angular/common';
+import { AsyncPipe, TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-sock',
   standalone: true,
-  imports: [NgIf, AsyncPipe, TitleCasePipe],
+  imports: [AsyncPipe, TitleCasePipe],
   templateUrl: './sock.component.html'
 })
 export class SockComponent {
