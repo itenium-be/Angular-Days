@@ -1,5 +1,6 @@
 import { Component, LOCALE_ID } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,6 @@ import { RouterOutlet } from '@angular/router';
   ],
   templateUrl: './app.component.html',
 })
-export class AppComponent {}
+export class AppComponent {
+  public env = environment;
+}
