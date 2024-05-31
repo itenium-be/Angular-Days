@@ -1,3 +1,12 @@
+@if ((reviews$ | async)?.length === 0){
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h3>
+        Be the first to review these fantastic socks!
+      </h3>
+    </div>
+  </div>
+} @else {
 <section class="client_section layout_padding" style="padding-top: 0">
   <div class="container">
     <div class="heading_container heading_center">
@@ -40,3 +49,4 @@
     </div>
   </div>
 </section>
+}
