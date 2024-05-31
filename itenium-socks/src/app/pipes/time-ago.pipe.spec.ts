@@ -18,7 +18,7 @@ describe('TimeAgoPipe', () => {
   });
 
   it('should return "44 minutes ago" for a date less than 1 hour ago', () => {
-    const date = new Date(Date.now() - 44 * 60 * 1000); // 59 minutes ago
+    const date = new Date(Date.now() - 44 * 60 * 1000); // 44 minutes ago
     expect(pipe.transform(date)).toBe('44 minutes ago');
   });
 
