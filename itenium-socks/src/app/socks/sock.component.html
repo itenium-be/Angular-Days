@@ -38,14 +38,27 @@
 
         <br>
         <br>
-
-        <button type="button" class="buy-socks" (click)="buy()">
+        <p *ngIf="sock.inventory === 0" class="badge">SOLD OUT</p>
+        <button type="button" class="buy-socks" (click)="buy()" *ngIf="sock.inventory > 0">
           BUY NOW
         </button>
+        <div *ngIf="showAlert" [ngClass]="alertType" class="alert">
+          {{ alertMessage }}
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<app-modal *ngIf="showModal" (close)="onCloseModal()">
+  <h2>Enter Bank Details</h2>
+  <p>Free shipping and return policy!</p>
+  <!-- Add form for bank details here -->
+  <button (click)="onConfirmPurchase()">Confirm Purchase</button>
+</app-modal>
+
+
 
 
 

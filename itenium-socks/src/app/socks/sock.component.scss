@@ -1,0 +1,32 @@
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: red;
+  color: white;
+}
+
+.alert {
+  position: fixed;
+  top: 20px;
+  left: 10%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: #28a745; /* Success background color */
+  color: white;
+  border-radius: 5px;
+}
+
+.alert.success {
+  background-color: #28a745;
+}
+
+.alert.failure {
+  background-color: #dc3545;
+}
