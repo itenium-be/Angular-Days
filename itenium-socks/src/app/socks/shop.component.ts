@@ -3,11 +3,12 @@ import { SocksService } from './socks.service';
 import { Observable } from 'rxjs';
 import { Sock } from './sock.model';
 import { AsyncPipe, NgFor } from '@angular/common';
+import { SockCardComponent } from './sock-card/sock-card.component';
 
 @Component({
   selector: 'app-shop',
   standalone: true,
-  imports: [NgFor, AsyncPipe],
+  imports: [NgFor, AsyncPipe, SockCardComponent],
   templateUrl: './shop.component.html'
 })
 export class ShopComponent {
