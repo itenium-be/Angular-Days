@@ -1,8 +1,8 @@
-import {Component} from '@angular/core';
-import {SocksService} from './socks.service';
-import {Observable} from 'rxjs';
-import {Sock} from './sock.model';
-import {AsyncPipe, NgFor} from '@angular/common';
+import { Component } from '@angular/core';
+import { SocksService } from './socks.service';
+import { Observable } from 'rxjs';
+import { Sock } from './sock.model';
+import { AsyncPipe, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-shop',
