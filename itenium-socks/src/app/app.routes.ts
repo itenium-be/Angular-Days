@@ -12,7 +12,7 @@ export const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: 'why-us', component: WhyUsComponent },
+      { path: 'why-us', component: WhyUsComponent, title: "Why Us" },
       { path: 'socks', component: ShopComponent },
       { path: 'socks/:id', component: SockComponent },
     ]
