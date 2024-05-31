@@ -5,8 +5,9 @@
         Our Socks
       </h2>
     </div>
+    <input type="text" class="search-box" placeholder="Search on sock name..." (input)="handleSearch($event)"/>
     <div class="row">
-      <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let sock of socks$ | async">
+      <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let sock of socksPaginated$ | async">
         <div class="box">
           <a href="/socks/{{ sock.id }}">
             <div class="img-box">
@@ -24,4 +25,7 @@
       </div>
     </div>
   </div>
+  <mat-paginator [length]="(socks$ | async)?.length" [pageSize]="pageSize" [pageIndex]="pageIndex"
+                 (page)="handlePage($event)">
+  </mat-paginator>
 </section>
