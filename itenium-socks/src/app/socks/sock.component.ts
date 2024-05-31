@@ -9,7 +9,6 @@ import {BankAccountModalComponent} from "../components/bank-account-modal/bank-a
 import {
   MatDialog
 } from '@angular/material/dialog';
-import {TrialModalDialog} from '../components/trial-modal/trial-modal.component';
 
 @Component({
   selector: 'app-sock',
