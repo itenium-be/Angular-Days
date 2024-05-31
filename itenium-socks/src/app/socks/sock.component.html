@@ -23,7 +23,7 @@
           </div>
           <div class="detail-box">
             <h6>{{ sock.name }}</h6>
-            <h6><span>€</span><span>{{ sock.price }}</span></h6>
+            <h6><span>{{ sock.price | euroFormat  }}</span></h6>
           </div>
           <div class="new">
             <span class="favourite" [style.color]="sock.color"><i class="fa fa-star"></i></span>
@@ -67,27 +67,27 @@
         </div>
       </div>
       <div class="col-md-6 col-lg-5 px-0">
-        <div class="review-form" style="padding-bottom: 0;">
-          <div>
-            <input type="text" class="message-box" placeholder="Your review..." />
-          </div>
-          <div>
-            <label>Your rating:</label>
-            <select style="margin-left: 14px">
-              <option disabled="" value="">select</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option selected>5</option>
-            </select>
-          </div>
-          <div class="d-flex">
-            <button type="button" (click)="addReview()">
-              SEND
-            </button>
-          </div>
-        </div>
+          <form (ngSubmit)="addReview()">
+            <div>
+              <input type="text" class="message-box" placeholder="Your review..." [(ngModel)]="reviewText" name="reviewText" />
+            </div>
+            <div>
+              <label>Your rating:</label>
+              <select style="margin-left: 14px" [(ngModel)]="reviewRating" name="reviewRating">
+                <option disabled="" value="">select</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option selected>5</option>
+              </select>
+            </div>
+            <div class="d-flex">
+              <button type="submit">
+                SEND
+              </button>
+            </div>
+          </form>
       </div>
     </div>
   </div>
