@@ -1,0 +1,21 @@
+<section class="shop_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>
+        Latest Socks
+      </h2>
+    </div>
+    <div class="row">
+      @for (sock of socks$ | async; track sock) {
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <sock-tile [sock]="sock"></sock-tile>
+        </div>
+      }
+    </div>
+    <div class="btn-box">
+      <a routerLink="/socks">
+        View All Socks
+      </a>
+    </div>
+  </div>
+</section>

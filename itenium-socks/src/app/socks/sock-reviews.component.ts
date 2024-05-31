@@ -1,8 +1,8 @@
 import { AsyncPipe, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { SocksService } from './socks.service';
-import { Review } from './sock.model';
+import { SocksService } from '@services/socks.service';
+import { Review } from '@models/sock.model';
 
 @Component({
   selector: 'app-sock-reviews',

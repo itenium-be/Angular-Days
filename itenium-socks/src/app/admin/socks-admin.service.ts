@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Review, Sock } from '../socks/sock.model';
+import { Review, Sock } from '@models/sock.model';
 import { AuthService } from './auth.service';
 
 @Injectable({

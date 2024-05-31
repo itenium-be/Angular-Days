@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { SocksService } from './socks.service';
+import { SocksService } from '@services/socks.service';
 import { Observable } from 'rxjs';
-import { Sock } from './sock.model';
+import { Sock } from '@models/sock.model';
 import { AsyncPipe, NgFor } from '@angular/common';
 
 @Component({

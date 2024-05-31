@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Sock } from './sock.model';
-import { SocksService } from './socks.service';
+import { Sock } from '@models/sock.model';
+import { SocksService } from '@services/socks.service';
 import { AsyncPipe, NgIf, TitleCasePipe } from '@angular/common';
 
 @Component({
