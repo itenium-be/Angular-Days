@@ -1,0 +1,6 @@
+#notProdIndicator {
+    position: fixed; 
+    display: inline; 
+    padding:1em; 
+    background-color:lightgreen;
+}
