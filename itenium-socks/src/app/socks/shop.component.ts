@@ -23,6 +23,8 @@ export class ShopComponent {
   public currentPageSubject = new BehaviorSubject<number>(1);
   public pageSize = 10;
 
+  placeholderImageUrl = 'images/placeholder.jpg';
+
   constructor(private socksService: SocksService) {}
 
   ngOnInit(): void {
@@ -75,4 +77,7 @@ export class ShopComponent {
     this.currentPageSubject.next(page);
   }
 
+  onImageError(event: Event) {
+    (event.target as HTMLImageElement).src = this.placeholderImageUrl;
+  }
 }
