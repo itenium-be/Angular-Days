@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3">
-          <h6>
+          <h6 i18n="@@footerAboutUsHeader">
             ABOUT US
           </h6>
-          <p>
+          <p i18n="@@footerAboutUsText">
             We're more than just a sock store - we're a celebration of your love for programming and technology.
             Founded by tech enthusiasts, our store is dedicated to bringing you a unique collection of socks that allow you to
             express your passion for coding and all things IT.
@@ -14,32 +14,34 @@
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="info_form">
-            <h5>
+            <h5 i18n="@@footerNewsletterHeader">
               Newsletter
             </h5>
             <form action="#">
-              <input type="email" placeholder="Enter your email">
-              <button>
+              <input type="email" i18n-placeholder="@@emailAdressPlaceholder" placeholder="Enter your email">
+              <button i18n="@@footerNewsletterSubscribeButton">
                 Subscribe
               </button>
             </form>
             <h6 style="text-align: center; margin-top: 46px;">
-              <a routerLink="/admin" style="color: white">Admin Module</a>
+              <a routerLink="/admin" style="color: white" i18n="@@footerAdminModuleLink">
+                Admin Module
+              </a>
             </h6>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
-          <h6>
+          <h6 i18n="@@footerNeedHelpHeader">
             NEED HELP
           </h6>
-          <p>
-          Our customer support team is available via phone or email.
-          Don't hesitate to reach out whenever you need assistance.
-          We're committed to providing you with the best sock-shopping experience possible.
+          <p i18n="@@footerNeedHelpText">
+            Our customer support team is available via phone or email.
+            Don't hesitate to reach out whenever you need assistance.
+            We're committed to providing you with the best sock-shopping experience possible.
           </p>
         </div>
         <div class="col-md-6 col-lg-3">
-          <h6>
+          <h6 i18n="@@footerContactUsHeader">
             CONTACT US
           </h6>
           <div class="info_link-box">
@@ -62,7 +64,7 @@
   </div>
   <footer class="footer_section">
     <div class="container">
-      <p>
+      <p i18n="@@footerCopyright">
         &copy; {{ currentYear }} All Rights Reserved
       </p>
     </div>
