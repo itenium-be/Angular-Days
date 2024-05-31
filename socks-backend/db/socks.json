@@ -16,7 +16,7 @@
             "variant": "blue",
             "color": "#23A3AC",
             "price": 20,
-            "inventory": 3
+            "inventory": 1
         },
         {
             "id": 3,
@@ -25,7 +25,7 @@
             "variant": "blue",
             "color": "#27384F",
             "price": 30,
-            "inventory": 9
+            "inventory": 6
         },
         {
             "id": 4,
@@ -79,7 +79,7 @@
             "variant": "Saffron",
             "color": "#f6c93a",
             "price": 12.5,
-            "inventory": 9
+            "inventory": 6
         },
         {
             "id": 10,

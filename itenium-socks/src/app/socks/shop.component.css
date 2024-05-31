@@ -1,0 +1,7 @@
+.soldOutItem {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    padding: 0.5em;
+}
