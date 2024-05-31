@@ -1,0 +1,14 @@
+<div class="box">
+  <a [routerLink]="['/socks', sock.id]">
+    <div class="img-box">
+      <img [src]="'sock-images/Socks-' + sock.brand + '-' + sock.variant + '.png'" />
+    </div>
+    <div class="detail-box">
+      <h6>{{ sock.name }}</h6>
+      <h6><span>{{ sock.price }}</span></h6>
+    </div>
+    <div class="new">
+      <span class="favourite" [style.color]="sock.color"><i class="fa fa-star"></i></span>
+    </div>
+  </a>
+</div>
