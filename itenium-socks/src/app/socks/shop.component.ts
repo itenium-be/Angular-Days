@@ -1,13 +1,13 @@
-import {Component, LOCALE_ID} from '@angular/core';
+import { Component } from '@angular/core';
 import { SocksService } from './socks.service';
 import { Observable } from 'rxjs';
 import { Sock } from './sock.model';
-import {AsyncPipe, CurrencyPipe, NgFor} from '@angular/common';
+import { AsyncPipe, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-shop',
   standalone: true,
-  imports: [NgFor, AsyncPipe, CurrencyPipe],
+  imports: [NgFor, AsyncPipe],
   templateUrl: './shop.component.html'
 })
 export class ShopComponent {
