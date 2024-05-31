@@ -1,14 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, LOCALE_ID, OnInit } from '@angular/core';
 import { SocksService } from '../socks/socks.service';
 import { Observable } from 'rxjs';
 import { Sock } from '../socks/sock.model';
-import { AsyncPipe, NgFor } from '@angular/common';
+import { AsyncPipe, NgFor, CurrencyPipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-latest-socks',
   standalone: true,
-  imports: [NgFor, AsyncPipe, RouterLink],
+  imports: [
+    NgFor, 
+    AsyncPipe, 
+    RouterLink,
+    CurrencyPipe
+  ],
   templateUrl: './latest-socks.component.html'
 })
 export class LatestSocksComponent implements OnInit {
