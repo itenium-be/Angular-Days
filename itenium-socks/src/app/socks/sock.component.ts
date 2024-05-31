@@ -8,7 +8,8 @@ import { AsyncPipe, NgIf, TitleCasePipe } from '@angular/common';
   selector: 'app-sock',
   standalone: true,
   imports: [NgIf, AsyncPipe, TitleCasePipe],
-  templateUrl: './sock.component.html'
+  templateUrl: './sock.component.html',
+  styleUrl: './sock.component.css'
 })
 export class SockComponent {
   sock$!: Observable<Sock>;

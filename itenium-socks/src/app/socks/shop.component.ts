@@ -8,7 +8,8 @@ import { AsyncPipe, NgFor } from '@angular/common';
   selector: 'app-shop',
   standalone: true,
   imports: [NgFor, AsyncPipe],
-  templateUrl: './shop.component.html'
+  templateUrl: './shop.component.html',
+  styleUrls: ['./shop.component.css'],
 })
 export class ShopComponent {
   socks$!: Observable<Sock[]>;
