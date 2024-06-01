@@ -111,8 +111,9 @@ success/failure alert for 3 seconds.
 Bonus:  
 Before actually buying the socks, open a modal
 where the user can enter his bank details, we
-can re-iterate our free shipping and return
-policy.
+also re-iterate our free shipping and return
+policy:  
+"We ship our socks without fee(t)s!"
 
 You probably want to create a generic ModalComponent
 with `<ng-content>` to avoid all the Html overhead
