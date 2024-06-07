@@ -3,14 +3,16 @@ import { SocksService } from './socks.service';
 import { Observable } from 'rxjs';
 import { Sock } from './sock.model';
 import { AsyncPipe, NgFor } from '@angular/common';
+import { MatBadgeModule } from '@angular/material/badge';
 
 @Component({
   selector: 'app-shop',
   standalone: true,
-  imports: [NgFor, AsyncPipe],
+  imports: [NgFor, AsyncPipe, MatBadgeModule],
   templateUrl: './shop.component.html'
 })
 export class ShopComponent {
+
   socks$!: Observable<Sock[]>;
 
   constructor(private socksService: SocksService) {}
@@ -18,4 +20,5 @@ export class ShopComponent {
   ngOnInit(): void {
     this.socks$ = this.socksService.get();
   }
+
 }

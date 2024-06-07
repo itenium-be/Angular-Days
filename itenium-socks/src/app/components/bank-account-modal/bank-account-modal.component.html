@@ -1,0 +1,9 @@
+<mat-dialog-content>
+    <label for="IBANinput">IBAN:</label>
+    <input [formControl]="ibanInput" type="text" name="IBANinput">
+    <p> We ship our socks without fee(t)s!
+        Not what you were looking for? Send them back free of charge!</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button (click)="addBankAccountNumber()">Submit</button>
+</mat-dialog-actions>
