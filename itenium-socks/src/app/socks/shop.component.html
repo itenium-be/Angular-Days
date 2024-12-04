@@ -13,7 +13,7 @@
               <img src="sock-images/Socks-{{ sock.brand }}-{{ sock.variant }}.png" />
             </div>
             <div class="detail-box">
-              <h6>{{ sock.name }}</h6>
+              <h6>{{ sock.name }}<span matBadge="SOLD OUT" [matBadgeHidden]="sock.inventory > 0"></span></h6>
               <h6><span>{{ sock.price }}</span></h6>
             </div>
             <div class="new">

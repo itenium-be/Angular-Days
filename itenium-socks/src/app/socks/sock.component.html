@@ -32,20 +32,30 @@
       </div>
       <div class="col-sm-6 col-md-6 col-lg-6">
         <h1 style="margin-top: 25px;">{{ sock.name }}</h1>
+        @if (sock.inventory > 0) {
         {{ sock.inventory }} in stock. FREE Shipping!
+        } @else {
+        SOLD OUT
+        }
+
         <br>
         Color: {{ sock.variant | titlecase }}
 
         <br>
         <br>
 
-        <button type="button" class="buy-socks" (click)="buy()">
+        @if (sock.inventory>0) {
+        <button type="button" class="buy-socks" (click)="buy(sock.id)">
           BUY NOW
         </button>
+        <app-bank-account-modal *ngIf="showModal" (onSubmitBankAccount)="doBuy(sock.id)"></app-bank-account-modal>
+        }
       </div>
     </div>
   </div>
 </section>
+
+
 
 
 
