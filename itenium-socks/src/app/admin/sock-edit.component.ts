@@ -7,7 +7,8 @@ import { SocksAdminService } from './socks-admin.service';
 @Component({
   selector: 'app-sock-edit',
   templateUrl: './sock-edit.component.html',
-  styles: ``
+  styles: ``,
+  standalone: false
 })
 export class SockEditComponent {
   sock$!: Observable<Sock>;

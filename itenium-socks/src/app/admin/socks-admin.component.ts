@@ -43,7 +43,8 @@ import { SocksAdminService } from './socks-admin.service';
       background-color: transparent;
       color: #f16179;
     }
-  `
+  `,
+  standalone: false
 })
 export class SocksAdminComponent {
   socks$!: Observable<Sock[]>;

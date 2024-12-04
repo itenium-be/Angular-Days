@@ -6,7 +6,6 @@ import { AsyncPipe, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-shop',
-  standalone: true,
   imports: [NgFor, AsyncPipe],
   templateUrl: './shop.component.html'
 })

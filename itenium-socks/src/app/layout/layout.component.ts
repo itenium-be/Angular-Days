@@ -5,7 +5,6 @@ import { FooterComponent } from './footer.component';
 
 @Component({
   selector: 'app-layout',
-  standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './layout.component.html'
 })

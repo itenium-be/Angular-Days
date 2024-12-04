@@ -6,7 +6,6 @@ import { AsyncPipe, NgIf, TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-sock',
-  standalone: true,
   imports: [NgIf, AsyncPipe, TitleCasePipe],
   templateUrl: './sock.component.html'
 })

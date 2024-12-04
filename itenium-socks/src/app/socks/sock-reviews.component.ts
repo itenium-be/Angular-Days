@@ -6,7 +6,6 @@ import { Review } from './sock.model';
 
 @Component({
   selector: 'app-sock-reviews',
-  standalone: true,
   imports: [NgFor, AsyncPipe],
   templateUrl: './sock-reviews.component.html'
 })
