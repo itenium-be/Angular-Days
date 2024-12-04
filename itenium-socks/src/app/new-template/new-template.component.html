@@ -1,0 +1,39 @@
+<div style="text-align: center; margin-bottom: 26px;">
+  <h1>NEW SYNTAX</h1>
+  <button class="btn btn-primary" routerLink="/old-template">Goto Old Template Syntax</button>
+</div>
+
+
+<app-section [title]="'@if(' + randomBool + ')'">
+  @if(randomBool) {
+    <img src="/new-template/true.jpg">
+  } @else {
+    <img src="/new-template/false.jpg">
+  }
+</app-section>
+
+
+<app-section [title]="'@for(itm of arr)'">
+  @for(element of elements; track element; let index = $index; let first = $first) {
+    {{ element }}
+  }
+</app-section>
+
+
+<app-section [title]="'@switch(' + randomNumber + ')'">
+  @switch(randomNumber) {
+    @case(1) {<img src="/new-template/number1.jpg"> }
+    @case(2) {<img src="/new-template/number2.webp"> }
+    @case(3) {<img src="/new-template/number3.webp"> }
+    @case(4) {<img src="/new-template/number4.webp"> }
+    @case(5) {<img src="/new-template/number5.jpg"> }
+    @case(7) {<img src="/new-template/number7.jpg"> }
+    @default {<img src="/new-template/number6.jpg"> }
+  }
+</app-section>
+
+
+<app-section [title]="'@let'">
+  @let randomNr = randomObs$ | async;
+  Nr = {{ randomNr }}
+</app-section>

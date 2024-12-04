@@ -1,0 +1,41 @@
+<div style="text-align: center; margin-bottom: 26px;">
+  <h1>OLD SYNTAX</h1>
+  <button class="btn btn-primary" routerLink="/new-template">Goto New Template Syntax</button>
+</div>
+
+<app-section [title]="'@if(' + randomBool + ')'">
+  <div *ngIf="randomBool; else randomFalse">
+    <img src="/new-template/true.jpg">
+  </div>
+
+  <ng-template #randomFalse>
+    <img src="/new-template/false.jpg">
+  </ng-template>
+</app-section>
+
+
+<app-section [title]="'@for(itm of arr)'">
+  <span *ngFor="let element of elements; index as i; first as isFirst">
+    {{ element }}
+  </span>
+</app-section>
+
+
+<app-section [title]="'@switch(' + randomNumber + ')'">
+  <div [ngSwitch]="randomNumber">
+    <span *ngSwitchCase="1"><img src="/new-template/number1.jpg"></span>
+    <span *ngSwitchCase="2"><img src="/new-template/number2.webp"></span>
+    <span *ngSwitchCase="3"><img src="/new-template/number3.webp"></span>
+    <span *ngSwitchCase="4"><img src="/new-template/number4.webp"></span>
+    <span *ngSwitchCase="5"><img src="/new-template/number5.jpg"></span>
+    <span *ngSwitchCase="7"><img src="/new-template/number7.jpg"></span>
+    <span *ngSwitchDefault><img src="/new-template/number6.jpg"></span>
+  </div>
+</app-section>
+
+
+<app-section [title]="'@let'">
+  <div *ngIf="randomObs$ | async as randomNr">
+    Nr = {{ randomNr }}
+  </div>
+</app-section>
