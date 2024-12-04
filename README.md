@@ -1,6 +1,11 @@
 Angular Days
 ============
 
+## Angular 19 Upgrade
+
+- `standalone: true` is now the default
+
+
 ## Setup
 
 Node: 22.1.0
