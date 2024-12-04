@@ -1,11 +1,6 @@
 Angular Days
 ============
 
-Vrijdag 31/5/2024 om 8u30  
-te Van der Valk hotel Brussels Airport  
-Culliganlaan 4b, 1831 Diegem
-
-
 ## Setup
 
 Node: 22.1.0
