@@ -31,7 +31,7 @@ ng serve --open
 ```sh
 cd socks-backend
 npm install
-npm run dev
+npm start
 ```
 
 

@@ -4,7 +4,6 @@ import express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 
-import config from './config';
 import errorHandler from './middleware/errorHandler';
 import fourOhFour from './middleware/fourOhFour';
 import hello from './routes/hello';
@@ -18,10 +17,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
 
-app.use(cors({
-  // @ts-ignore no-implicit-any
-  origin: config.clientCorsOrigins[config.nodeEnv] ?? '*'
-}))
+app.use(cors({ origin: '*' }))
 
 app.use(helmet())
 app.use(morgan('tiny'))

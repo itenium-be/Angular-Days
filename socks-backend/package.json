@@ -8,8 +8,8 @@
   "main": "dist/src/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "cross-env NODE_ENV=production dotenv -e .env node dist/src/index.js",
-    "dev": "cross-env NODE_ENV=development nodemon"
+    "build-start": "tsc && cross-env NODE_ENV=production dotenv -e .env node dist/src/index.js",
+    "start": "cross-env NODE_ENV=development nodemon"
   },
   "dependencies": {
     "cookie-parser": "^1.4.6",
