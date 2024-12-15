@@ -28,4 +28,9 @@ export class OldTemplateComponent {
   randomBool = Math.random() > 0.5;
   elements = ['❤️', '🥳', '🍀', '✨', '🌈', '🎉'];
   randomObs$ = of(Math.floor(Math.random() * 10));
+
+  trackElFn(index: number, el: string) {
+    console.log('tracking', el);
+    return el;
+  }
 }

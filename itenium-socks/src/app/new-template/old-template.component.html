@@ -15,8 +15,14 @@
 
 
 <app-section [title]="'@for(itm of arr)'">
-  <span *ngFor="let element of elements; index as i; first as isFirst">
-    {{ element }}
+  <span *ngFor="let element of elements; index as i; first as isFirst; trackBy: trackElFn">
+    {{ i }}: {{ element }} (first={{isFirst}})
+  </span>
+
+  <br />
+
+  <span *ngFor="let element of elements; let isFirst = first; let i = index">
+    {{ i }}: {{ element }} (first={{isFirst}})
   </span>
 </app-section>
 
